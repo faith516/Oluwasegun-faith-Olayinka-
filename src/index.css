@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-pitch: #1a4d2e;
+  --color-pitch-light: #2d6a4f;
+  --color-naira: #008751;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-950 text-neutral-100 antialiased font-sans;
+  }
+}
+
+.pitch-grid {
+  background-image: linear-gradient(var(--color-pitch) 50%, var(--color-pitch-light) 50%);
+  background-size: 100% 40px;
+}
+
